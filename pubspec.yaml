@@ -37,6 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.6
   xml: ^6.5.0
   xml_map_converter: ^1.0.0+1
+  test_api: ^0.7.2
+  string_scanner: ^1.2.0
+  collection: ^1.18.0
+  material_color_utilities: ^0.11.1
 
 dev_dependencies:
   flutter_test:
