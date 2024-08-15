@@ -15,7 +15,7 @@ Future<List<String>> xmlParseDocument() async {
     returnList.add("version : $string1");
   }
   String rootElement = document.rootElement.name.toString();
-  xml.XmlElement rootNodes = document.findElements(rootElement).first;
+  xml.XmlElement rootNodes = document.findElements(rootElement).single;
   returnList.add("Root Element : $rootElement");
   findLastElement(rootNodes, elementLists);
   for (xml.XmlElement node in elementLists) {
