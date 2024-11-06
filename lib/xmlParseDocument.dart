@@ -4,7 +4,7 @@ import 'package:xml/xml.dart' as xml;
 Future<List<String>> xmlParseDocument() async {
   List<String> returnList = [];
   List<xml.XmlElement> elementLists = [];
-  String newDocument = await rootBundle.loadString('president.xml');
+  String newDocument = await rootBundle.loadString('FormFieldValidatorShort.xml');
   xml.XmlDocument document = xml.XmlDocument.parse(newDocument);
   if (document.declaration?.encoding != null) {
     String string1 = document.declaration!.encoding.toString();
@@ -15,9 +15,9 @@ Future<List<String>> xmlParseDocument() async {
     returnList.add("version : $string1");
   }
   String rootElement = document.rootElement.name.toString();
-  xml.XmlElement rootNodes = document.findElements(rootElement).single;
+  xml.XmlElement? rootNodes = document.findElements(rootElement).singleOrNull;
   returnList.add("Root Element : $rootElement");
-  findLastElement(rootNodes, elementLists);
+  findLastElement(rootNodes!, elementLists);
   for (xml.XmlElement node in elementLists) {
     Set<String> parentNodeSet = {};
     parentNodeSet.add(node.toString());

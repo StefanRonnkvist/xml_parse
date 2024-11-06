@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <Function>HasLowercaseChars</Function>
+    <Category>Boolean</Category>
+    <Description>requires the fields to contain a specified number of lowercase characters.</Description>
+    <Parameter1>int atLeast = 1</Parameter1>
+    <Parameter2>RegExp? regex</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>hasNumericChars</Function>
+    <Category>Boolean</Category>
+    <Description>requires the fields to contain a specified number of numeric characters.</Description>
+    <Parameter1>int atLeast = 1</Parameter1>
+    <Parameter2>RegExp? regex</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>hasSpecialChars</Function>
+    <Category>Boolean</Category>
+    <Description>requires the fields to contain a specified number of special characters.</Description>
+    <Parameter1>int atLeast = 1</Parameter1>
+    <Parameter2>RegExp? regex</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>hasUppercaseChars</Function>
+    <Category>Boolean</Category>
+    <Description>requires the fields to contain a specified number of uppercase characters.</Description>
+    <Parameter1>int atLeast = 1</Parameter1>
+    <Parameter2>RegExp? regex</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>isFalse</Function>
+    <Category>Boolean</Category>
+    <Description>requires the fields to be false.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>isTrue</Function>
+    <Category>Boolean</Category>
+    <Description>requires the fields to be true.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>containsElement</Function>
+    <Category>Collection</Category>
+    <Description>requires the fields to be in the provided list.</Description>
+    <Parameter1>List values</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>equalLength</Function>
+    <Category>Collection</Category>
+    <Description>requires the length of the fields value to be equal to the provided minimum length.</Description>
+    <Parameter1>int length</Parameter1>
+    <Parameter2>bool allowEmpty = false</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>maxLength</Function>
+    <Category>Collection</Category>
+    <Description>requires the length of the fields value to be less than or equal to the provided maximum size.</Description>
+    <Parameter1>int maxLength</Parameter1>
+    <Parameter2>String? ErrorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>minLength</Function>
+    <Category>Collection</Category>
+    <Description>requires the length of the fields value to be greater than or equal to the provided minimum length.</Description>
+    <Parameter1>int minLength</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>range</Function>
+    <Category>Collection</Category>
+    <Description>requires the fields to be within a range.</Description>
+    <Parameter1>num min</Parameter1>
+    <Parameter2>num max</Parameter2>
+    <Parameter3>bool inclusive = true</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>unique</Function>
+    <Category>Collection</Category>
+    <Description>requires the fields to be unique in the provided list.</Description>
+    <Parameter1>List values</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>aggregate</Function>
+    <Category>Core</Category>
+    <Description>runs the validators in parallel, collecting all errors.</Description>
+    <Parameter1>List validators</Parameter1>
+    <Parameter2></Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>compose</Function>
+    <Category>Core</Category>
+    <Description>runs each validator against the value provided.</Description>
+    <Parameter1>List validators</Parameter1>
+    <Parameter2></Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>conditional</Function>
+    <Category>Core</Category>
+    <Description>conditionally runs a validator against the value provided.</Description>
+    <Parameter1>bool Function(T? value) condition</Parameter1>
+    <Parameter2>FormFieldValidator validator</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>defaultValue</Function>
+    <Category>Core</Category>
+    <Description>runs the validator using the default value when the provided value is null.</Description>
+    <Parameter1>T defaultValue</Parameter1>
+    <Parameter2>FormFieldValidator validator</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>equal</Function>
+    <Category>Core</Category>
+    <Description>requires the fields value to be equal to the provided object.</Description>
+    <Parameter1>Object value</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>log</Function>
+    <Category>Core</Category>
+    <Description>runs the validator and logs the value at a specific point in the validation chain.</Description>
+    <Parameter1>String Function(T? value)? log</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>notEqual</Function>
+    <Category>Core</Category>
+    <Description>requires the fields value to be not equal to the provided object.</Description>
+    <Parameter1>Object value</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>or</Function>
+    <Category>Core</Category>
+    <Description>runs each validator against the value provided and passes when any works.</Description>
+    <Parameter1>List validators</Parameter1>
+    <Parameter2></Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>required</Function>
+    <Category>Core</Category>
+    <Description>requires the field to have a non-empty value.</Description>
+    <Parameter1>String? ErrorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>skipWhen</Function>
+    <Category>Core</Category>
+    <Description>runs the validator and skips the validation when a certain condition is met.</Description>
+    <Parameter1>bool Function(T? value) condition</Parameter1>
+    <Parameter2>FormFieldValidator validator</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>transform</Function>
+    <Category>Core</Category>
+    <Description>transforms the value before running the validator.</Description>
+    <Parameter1>T Function(T? value) transformer</Parameter1>
+    <Parameter2>FormFieldValidator validator</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>date</Function>
+    <Category>DateTime</Category>
+    <Description>requires the fields value to be a valid date time.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>dateFuture</Function>
+    <Category>DateTime</Category>
+    <Description>requires the fields value to be in the future.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>datePast</Function>
+    <Category>DateTime</Category>
+    <Description>requires the fields value to be in the past.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>dateRange</Function>
+    <Category>DateTime</Category>
+    <Description>requires the fields value to be a within a date range.</Description>
+    <Parameter1>DateTime minDate</Parameter1>
+    <Parameter2>DateTime maxDate</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>dateTime</Function>
+    <Category>DateTime</Category>
+    <Description>requires the fields value to be a valid date string.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>time</Function>
+    <Category>DateTime</Category>
+    <Description>requires the fields value to be a valid time string.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>timeZone</Function>
+    <Category>DateTime</Category>
+    <Description>requires the fields value to be a valid time zone.</Description>
+    <Parameter1>List? validTimeZones</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>and</Function>
+    <Category>Extension methods</Category>
+    <Description>Combines the current validator with another validator using logical AND.</Description>
+    <Parameter1></Parameter1>
+    <Parameter2></Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>log</Function>
+    <Category>Extension methods</Category>
+    <Description>runs the validator and logs the value at a specific point in the validation chain.</Description>
+    <Parameter1>String Function(T? value)? log</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>or</Function>
+    <Category>Extension methods</Category>
+    <Description>runs each validator against the value provided and passes when any works.</Description>
+    <Parameter1>List validators</Parameter1>
+    <Parameter2></Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>skipWhen</Function>
+    <Category>Extension methods</Category>
+    <Description>runs the validator and skips the validation when a certain condition is met.</Description>
+    <Parameter1>bool Function(T? value) condition</Parameter1>
+    <Parameter2>FormFieldValidator validator</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>transform</Function>
+    <Category>Extension methods</Category>
+    <Description>Transforms the value before applying the validator.</Description>
+    <Parameter1>T Function(T? value) transformer</Parameter1>
+    <Parameter2>FormFieldValidator validator</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>unless</Function>
+    <Category>Extension methods</Category>
+    <Description>Adds a condition to apply the validator only if the condition is not met.</Description>
+    <Parameter1></Parameter1>
+    <Parameter2></Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>when</Function>
+    <Category>Extension methods</Category>
+    <Description>Adds a condition to apply the validator only if the condition is met.</Description>
+    <Parameter1></Parameter1>
+    <Parameter2></Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>withErrorMessage</Function>
+    <Category>Extension methods</Category>
+    <Description>Overrides the error message of the current validator.</Description>
+    <Parameter1></Parameter1>
+    <Parameter2></Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>fileExtension</Function>
+    <Category>File</Category>
+    <Description>requires the fields value to a valid file extension.</Description>
+    <Parameter1>List allowedExtensions</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>fileName</Function>
+    <Category>File</Category>
+    <Description>requires the fields to be a valid file name.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>fileSize</Function>
+    <Category>File</Category>
+    <Description>requires the fields to be less than the max size.</Description>
+    <Parameter1>int maxSize</Parameter1>
+    <Parameter2>bool base1024Conversion = true</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>mimeType</Function>
+    <Category>File</Category>
+    <Description>requires the fields value to a valid MIME type.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>path</Function>
+    <Category>File</Category>
+    <Description>requires the fields to be a valid file or folder path.</Description>
+    <Parameter1>String? ErrorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>bic</Function>
+    <Category>Finance</Category>
+    <Description>requires the fields to be a valid BIC.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>creditCard</Function>
+    <Category>Finance</Category>
+    <Description>requires the fields value to be a valid credit card number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>creditCardCVC</Function>
+    <Category>Finance</Category>
+    <Description>requires the fields value to be a valid credit card CVC number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>creditCardExpirationDate</Function>
+    <Category>Finance</Category>
+    <Description>requires the fields value to be a valid credit card expiration date and can check if not expired yet.</Description>
+    <Parameter1>bool checkForExpiration = true</Parameter1>
+    <Parameter2>RegExp? regex</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>iban</Function>
+    <Category>Finance</Category>
+    <Description>requires the fields to be a valid IBAN.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>city</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields value to be a valid city name.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>List citiesWhitelist = const []</Parameter2>
+    <Parameter3>List citiesBlacklist = const []</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>country</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields value to be a valid country name.</Description>
+    <Parameter1>List countryWhitelist = const []</Parameter1>
+    <Parameter2>List countryBlacklist = const []</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>firstName</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields value to be a valid first name.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>List firstNameWhitelist = const []</Parameter2>
+    <Parameter3>List firstNameBlacklist = const []</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>lastName</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields value to be a valid last name.</Description>
+    <Parameter1>RegExp? Regex</Parameter1>
+    <Parameter2>List lastNameWhitelist = const []</Parameter2>
+    <Parameter3>List lastNameBlacklist = const []</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>passport</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields value to be a valid passport number.</Description>
+    <Parameter1>RegExp? Regex</Parameter1>
+    <Parameter2>List passportNumberWhitelist = const []</Parameter2>
+    <Parameter3>List passportNumberBlacklist = const []</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>password</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields to be a valid password that matched required conditions.</Description>
+    <Parameter1>int minLength = 8</Parameter1>
+    <Parameter2>int maxLength = 32</Parameter2>
+    <Parameter3>int minUppercaseCount = 1</Parameter3>
+    <Parameter4>int minLowercaseCount = 1</Parameter4>
+    <Parameter5>int minNumberCount = 1</Parameter5>
+    <Parameter6>int minSpecialCharCount = 1</Parameter6>
+    <Parameter7>String? errorText</Parameter7>
+    <Parameter8>bool checkNullOrEmpty = true</Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>ssn</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields to be a valid SSN (Social Security Number).</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>state</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields value to be a valid state name.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>List stateWhitelist = const []</Parameter2>
+    <Parameter3>List stateBlacklist = const []</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>street</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields value to be a valid street name.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>List streetWhitelist = const []</Parameter2>
+    <Parameter3>List streetBlacklist = const []</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>username</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields to be a valid username that matched required conditions.</Description>
+    <Parameter1>int minLength = 3</Parameter1>
+    <Parameter2>int maxLength = 32</Parameter2>
+    <Parameter3>bool allowNumbers = true</Parameter3>
+    <Parameter4>bool allowUnderscore = false</Parameter4>
+    <Parameter5>bool allowDots = false</Parameter5>
+    <Parameter6>bool allowDash = false</Parameter6>
+    <Parameter7>bool allowSpace = false</Parameter7>
+    <Parameter8>bool allowSpecialChar = false</Parameter8>
+    <Parameter9>String? errorText</Parameter9>
+    <Parameter10>bool checkNullOrEmpty = true</Parameter10>
+  </row>
+  <row>
+    <Function>zipCode</Function>
+    <Category>Identity</Category>
+    <Description>requires the fields to be a valid zip code.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>email</Function>
+    <Category>Network</Category>
+    <Description>requires the fields value to be a valid email address.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>ip</Function>
+    <Category>Network</Category>
+    <Description>requires the fields value to be a valid IP address.</Description>
+    <Parameter1>int version = 4</Parameter1>
+    <Parameter2>RegExp? regex</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>latitude</Function>
+    <Category>Network</Category>
+    <Description>requires the fields to be a valid latitude.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>longitude</Function>
+    <Category>Network</Category>
+    <Description>requires the fields to be a valid longitude.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>macAddress</Function>
+    <Category>Network</Category>
+    <Description>requires the fields to be a valid MAC address.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>phoneNumber</Function>
+    <Category>Network</Category>
+    <Description>requires the fields value to be a valid phone number.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>portNumber</Function>
+    <Category>Network</Category>
+    <Description>requires the fields to be a valid port number.</Description>
+    <Parameter1>int min = 0</Parameter1>
+    <Parameter2>int max = 65535</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>url</Function>
+    <Category>Network</Category>
+    <Description>requires the fields value to be a valid URL.</Description>
+    <Parameter1>List protocols = const [http, https, ftp]</Parameter1>
+    <Parameter2>bool requireTld = true</Parameter2>
+    <Parameter3>bool requireProtocol = false</Parameter3>
+    <Parameter4>bool allowUnderscore = false</Parameter4>
+    <Parameter5>List hostWhitelist = const []</Parameter5>
+    <Parameter6>List hostBlacklist = const []</Parameter6>
+    <Parameter7>RegExp? regex</Parameter7>
+    <Parameter8>String? errorText</Parameter8>
+    <Parameter9>bool checkNullOrEmpty = true</Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>between</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields to be between two numbers.</Description>
+    <Parameter1>num min</Parameter1>
+    <Parameter2>num max</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>evenNumber</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields to be an even number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>float</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields to be an float number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>hexadecimal</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields to be an hexadecimal number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>integer</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields value to be an integer.</Description>
+    <Parameter1>int? radix</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>max</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields value to be less than or equal to the provided number.</Description>
+    <Parameter1>num max</Parameter1>
+    <Parameter2>bool inclusive = true</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>min</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields value to be greater than or equal to the provided number.</Description>
+    <Parameter1>num min</Parameter1>
+    <Parameter2>bool inclusive = true</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>negativeNumber</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields to be a negative number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>notZeroNumber</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields to be not a number zero.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>numeric</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields value to be a valid number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>oddNumber</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields to be an odd number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>positiveNumber</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields to be a positive number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>primeNumber</Function>
+    <Category>Numeric</Category>
+    <Description>requires the fields to be a prime number.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>alphabetical</Function>
+    <Category>String</Category>
+    <Description>requires the fields to contain only alphabetical characters.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>contains</Function>
+    <Category>String</Category>
+    <Description>requires the sub string to be in the fields value.</Description>
+    <Parameter1>String substring</Parameter1>
+    <Parameter2>bool caseSensitive = true</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>endsWith</Function>
+    <Category>String</Category>
+    <Description>requires the sub string to be the end of the fields value.</Description>
+    <Parameter1>String suffix</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>lowercase</Function>
+    <Category>String</Category>
+    <Description>requires the fields value to be lowercase.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>match</Function>
+    <Category>String</Category>
+    <Description>requires the fields value to match the provided regex pattern.</Description>
+    <Parameter1>RegExp regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>matchNot</Function>
+    <Category>String</Category>
+    <Description>requires the fields value to not match the provided regex pattern.</Description>
+    <Parameter1>RegExp regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>maxWordsCount</Function>
+    <Category>String</Category>
+    <Description>requires the word count of the fields value to be less than or equal to the provided maximum count.</Description>
+    <Parameter1>int maxWordsCount</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>minWordsCount</Function>
+    <Category>String</Category>
+    <Description>requires the word count of the fields value to be greater than or equal to the provided minimum count.</Description>
+    <Parameter1>int minWordsCount</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>singleLine</Function>
+    <Category>String</Category>
+    <Description>requires the fields string to be a single line of text.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>startsWith</Function>
+    <Category>String</Category>
+    <Description>requires the sub string to be the start of the fields value.</Description>
+    <Parameter1>String prefix</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>uppercase</Function>
+    <Category>String</Category>
+    <Description>requires the fields value to be uppercase.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>base64</Function>
+    <Category>Use Case</Category>
+    <Description>requires the fields to be a valid base64 string.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>colorCode</Function>
+    <Category>Use Case</Category>
+    <Description>requires the fields value to be a valid color code.</Description>
+    <Parameter1>List formats = const [hex,rgb, hsl]</Parameter1>
+    <Parameter2>RegExp? regex</Parameter2>
+    <Parameter3>String? errorText</Parameter3>
+    <Parameter4>bool checkNullOrEmpty = true</Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>duns</Function>
+    <Category>Use Case</Category>
+    <Description>requires the fields value to be a valid DUNS.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>String? errorText</Parameter2>
+    <Parameter3>bool checkNullOrEmpty = true</Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>isbn</Function>
+    <Category>Use Case</Category>
+    <Description>requires the fields to be a valid ISBN.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>json</Function>
+    <Category>Use Case</Category>
+    <Description>requires the fields to be a valid json string.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>languageCode</Function>
+    <Category>Use Case</Category>
+    <Description>requires the fields to be a valid language code.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>List languageCodeWhitelist = const []</Parameter2>
+    <Parameter3>List languageCodeBlacklist = const []</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>licensePlate</Function>
+    <Category>Use Case</Category>
+    <Description>requires the fields to be a valid license plate.</Description>
+    <Parameter1>RegExp? regex</Parameter1>
+    <Parameter2>List licensePlateWhitelist = const []</Parameter2>
+    <Parameter3>List licensePlateBlacklist = const []</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>uuid</Function>
+    <Category>Use Case</Category>
+    <Description>requires the fields to be a valid uuid.</Description>
+    <Parameter1>String? errorText</Parameter1>
+    <Parameter2>bool checkNullOrEmpty = true</Parameter2>
+    <Parameter3></Parameter3>
+    <Parameter4></Parameter4>
+    <Parameter5></Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+  <row>
+    <Function>vin</Function>
+    <Category>Use Case</Category>
+    <Description>requires the fields to be a valid VIN number.</Description>
+    <Parameter1>RegExp? Regex</Parameter1>
+    <Parameter2>List vinWhitelist = const []</Parameter2>
+    <Parameter3>List vinBlacklist = const []</Parameter3>
+    <Parameter4>String? errorText</Parameter4>
+    <Parameter5>bool checkNullOrEmpty = true</Parameter5>
+    <Parameter6></Parameter6>
+    <Parameter7></Parameter7>
+    <Parameter8></Parameter8>
+    <Parameter9></Parameter9>
+    <Parameter10></Parameter10>
+  </row>
+</root>
